@@ -31,7 +31,9 @@ public class ListActivity extends Activity {
 				new String[] { "name", "age" },
 				new int[] { R.id.name, R.id.age });
 		listView = (ListView) findViewById(R.id.listview);
-		listView.setAdapter(adapt);
+		listView.setAdapter(adapt);  
+		
+		
 	}
 
 }
