@@ -1,10 +1,5 @@
 package com.example.helloworld;
 
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,8 +8,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.example.helloworld.R;
 
 public class LoginActivity extends Activity {
 	private Button submit;
@@ -42,18 +35,6 @@ public class LoginActivity extends Activity {
 				if (!checkForm()) {
 					return;
 				}
-				// ≈–∂œ
-				// String url = "http://www.baidu.com";
-				// try {
-				// URL u = new URL(url);
-				// HttpURLConnection conn = (HttpURLConnection) u.getContent();
-				// } catch (MalformedURLException e) {
-				// e.printStackTrace();
-				// } catch (IOException e) {
-				// e.printStackTrace();
-				// }
-
-				// Ã¯◊™
 				Intent intent = new Intent();
 				intent.setClass(LoginActivity.this, MainActivity.class);
 				startActivity(intent);
@@ -64,7 +45,7 @@ public class LoginActivity extends Activity {
 	public boolean checkForm() {
 		if ("".equals(username.getText().toString())
 				|| "".equals(password.getText().toString())) {
-			Toast.makeText(LoginActivity.this, "”√ªß√˚√‹¬Î≤ªƒ‹Œ™ø’", Toast.LENGTH_SHORT)
+			Toast.makeText(LoginActivity.this, "Áî®Êà∑ÂêçÂØÜÁ†Å‰∏çËÉΩ‰∏∫Á©∫", Toast.LENGTH_SHORT)
 					.show();
 			return false;
 		} else {
